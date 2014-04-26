@@ -1,0 +1,6 @@
+[03-Feb-2014 11:32:07 America/New_York] PHP Warning:  include(/scripts/functions.php): failed to open stream: No such file or directory in /home/jessicaj/public_html/php424/2breakfast-bonanza/bacon/bacon.php on line 1
+[03-Feb-2014 11:32:07 America/New_York] PHP Warning:  include(): Failed opening '/scripts/functions.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/jessicaj/public_html/php424/2breakfast-bonanza/bacon/bacon.php on line 1
+[03-Feb-2014 11:32:07 America/New_York] PHP Fatal error:  Call to undefined function get_banner() in /home/jessicaj/public_html/php424/2breakfast-bonanza/bacon/bacon.php on line 15
+[03-Feb-2014 11:51:49 America/New_York] PHP Warning:  include(/scripts/functions.php): failed to open stream: No such file or directory in /home/jessicaj/public_html/php424/2breakfast-bonanza/bacon/bacon.php on line 1
+[03-Feb-2014 11:51:49 America/New_York] PHP Warning:  include(): Failed opening '/scripts/functions.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/jessicaj/public_html/php424/2breakfast-bonanza/bacon/bacon.php on line 1
+[03-Feb-2014 11:51:49 America/New_York] PHP Fatal error:  Call to undefined function get_banner() in /home/jessicaj/public_html/php424/2breakfast-bonanza/bacon/bacon.php on line 1

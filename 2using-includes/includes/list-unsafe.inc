@@ -1,0 +1,9 @@
+<?php echo '<p>the following list is the include file</p>'; ?>
+<ol>
+<li>There are several different kinds of pathnames you can write: absolute pathnames, document relative pathnames, web or site root pathnames, and server root pathnames. Whew. They each have a different purpose.</li>
+<li>If you are using the include function, you cannot use an absolute pathname. You can use a relative pathname but that isn't useful if your script is on a template page, or otherwise needs to be usable from different locations within site hierarchy. </li>
+<li>However, it is possible to write a very useful pathname using a "superglobal array" rather than a relative pathname. The <pre>$_SERVER['DOCUMENT_ROOT']</pre> superglobal array will give you the <strong>server root</strong>. You can then append your web root pathname to it, and there you go. Just be sure the web root hierarchy is the same on both servers.</li>
+<li>If you have links on your include (like navigation), you need to make decisions about the kind of pathname you want there. You CAN use an absolute pathname hardcoded in, but it isn't the best choice. If you move your site from one server to another, that absolute pathname will send you back to the other server! Not good! But a regular relative pathname will not work either, unless you have a flat site and that is bad. So, use a <strong>site/web root relative pathname</strong>, and it will work from anywhere, unless you change your site files hierarchy. 
+</ol>
+
+<!-- this is saved as an .inc file, and the script will parse on the page it's included on. However, this isn't particularly safe, because if someone viewed this page on its own, they'd see the script in plain text, because it hasn't been parsed. So don't save pages with scripts on them as anything but .php files. -->

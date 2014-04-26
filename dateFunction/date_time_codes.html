@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>PHP Date and Time codes</title>
+</head>
+
+<body>
+<header>
+<h1>PHP Date - Reference</h1>
+</header>
+<article>
+
+<p>The following is a brief cheat-sheet of the date and time codes for PHP. You won't be expected to memorize them; just consult a reference. For more information, visit official PHP documentation: <br />
+<a href="http://us1.php.net/manual/en/function.date.php" target="_blank"><code>date()</code> function documentation</a><br />
+<a href="http://www.php.net/manual/en/timezones.php" target="_blank">List of timezones in PHP</a>
+<h2>Full Date and Time:</h2>
+<ul>
+  <li><b>r</b>: Displays the full date, time and timezone offset.  It is equivalent to manually entering <code>date("D, d M Y H:i:s O")</code><br />
+Note that the punctuation in the argument is literal: it will be printed to the page. If you don't put in spaces and/or punctuation, you won't get them.</li>
+
+</ul>
+<h2>Time:</h2>
+<ul>
+<li><b>a</b>: am or pm depending on the time</li>
+<li><b>A</b>: AM or PM depending on the time</li>
+<li><b>g</b>: Hour without leading zeroes. Values are 1 through 12.</li>
+<li><b>G</b>: Hour in 24-hour format without leading zeroes. Values are 0 through 23.</li>
+<li><b>h</b>: Hour with leading zeroes. Values 01 through 12.</li>
+<li><b>H</b>: Hour in 24-hour format with leading zeroes.  Values 00 through 23.</li>
+<li><b>i</b>: Minute with leading zeroes. Values 00 through 59.</li>
+<li><b>s</b>: Seconds with leading zeroes. Values 00 through 59.</li>
+</ul>
+
+<h2>Day:</h2>
+<ul>
+<li><b>d</b>: Day of the month with leading zeroes. Values are 01 through 31.</li>
+<li><b>j</b>: Day of the month without leading zeroes. Values 1 through 31</li>
+<li><b>D</b>: Day of the week abbreviations. Sun through Sat </li>
+<li><b>l</b>: Day of the week. Values Sunday through Saturday</li>
+<li><b>w</b>: Day of the week without leading zeroes. Values 0 through 6.</li>
+<li><b>z</b>: Day of the year without leading zeroes. Values 0 through 365.</li>
+</ul>
+
+<h2>Month:</h2>
+<ul>
+<li><b>m</b>: Month number with leading zeroes. Values 01 through 12</li>
+<li><b>n</b>: Month number without leading zeroes. Values 1 through 12</li>
+<li><b>M</b>: Abbreviation for the month. Values Jan through Dec</li>
+<li><b>F</b>: Normal month representation. Values January through December.</li>
+<li><b>t</b>: The number of days in the month. Values 28 through 31.</li>
+</ul>
+
+<h2>Year:</h2>
+<ul>
+<li><b>L</b>: 1 if it's a leap year and 0 if it isn't.</li>
+<li><b>Y</b>: A four digit year format</li>
+<li><b>y</b>: A two digit year format. Values 00 through 99.</li>
+</ul>
+
+
+<h2>Other Formatting:</h2>
+<ul>
+<li><b>U</b>: The number of seconds since the Unix Epoch (January 1, 1970)</li>
+<li><b>O</b>: This represents the Timezone offset, which is the difference from Greenwich Meridian Time (GMT). 100 = 1 hour, -600 = -6 hours </li>
+</ul>
+
+</article>
+</body>
+</html>

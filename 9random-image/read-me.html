@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>Random Images on Breakfast Bonanza</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8" />
+</head>
+<body>
+<h1>PHP & WordPress<br />
+Random Image Exercise</h1>
+
+<h3>Overview</h3>
+<p>We've been working on Breakfast Bonanza as a site to put together the PHP we've been learning. This weekend, you need to create a random image generator for the sidebar where you currently have different images displaying depending on which page the sidebar include has loaded into (you get a bacon picture on the bacon page, a pancake picture on the pancakes page, etc).
+</p>
+
+<p>What you need to do is to remove the script you have now on the sidebar and replace it with a new one. The script you write will use arrays for the images that go with each page. Then the script will randomize the images within each group so on the bacon page you get random bacon images each time you load the bacon page, and on the pancakes page you get random pancake images each time you load the pancakes page, etc.</p>
+
+<p>View <a href="http://criminalanimal.org/breakfast-bonanza-done/" target="_blank">my live site with a working script</a> so you can see it in action.</p>
+
+<p>Here is a list of what you need to do:</p>
+<ul>
+<li>This script needs to be a function called <code>get_random_image()</code>. Write that script on your functions page.</li>
+<li>You'll hardcode most of the html for the <code>img</code> tag in the sidebar. The only think you won't code in is the call to the function. See the code block below for the markup that goes on the sidebar include. If you view the source on the live page, it will give you hints about the pathname.</li>
+<li>The function you write will output the name of the file only. Not the html markup, not a pathname. That is hardcoded into the sidebar (see code block below).</li>
+<li>To being this exercise, make a LIST OF WHAT NEEDS TO HAPPEN and write some pseudo-code.</li>
+<li>You'll need to create a custom function with several arrays, several variables, the <code>array_rand()</code> function, and you can use the <code>$this_page</code> variable you've already used for the <code>get_title()</code> function you've written (but you don't need to process it for caps).</li>
+<li>The conditional statement you used to put in the non-random image for each page is a good way to consider structuring your script. You already have something that works! It will be a little different, though.</li>
+</ul>
+
+<p>code block:
+<pre>
+&lt;img src="(put robust pathname here)(put call to function here in a php scripting block)"  alt="random image" /&gt;
+</pre>
+</p>
+
+
+<h3>Due Date</h3>
+<p><strong>This exercise is due by 8:00 am on Monday 24 February.</strong> I'll come by and see what you've got. Be sure to upload it to your server!</p> 
+
+<p>Do your best with this. It isn't scored, but I want you to get into the spirit of solving problems with scripts, thinking through the problems and applying what you already know to them.</p>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CSS Mini-Project: 2-col Float Layout (Pink)</title>
+<style type="text/css">
+
+
+body {
+  background-image: url('images/bg_gradient.gif');
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  font-family: helvetica;
+}
+#wrapper{
+  background-color: #ededed;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+#banner{
+  background-image: url('images/header.jpg');
+    background-size: auto 200px;
+  margin-top: 39px;
+  height: 250px;
+  background-repeat:no-repeat;
+  background-size: 960px 250px;
+}
+h1{
+  color: #800000;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+#tagline{
+  background-color: #f6dcee;
+  padding: 10px;
+  width: 200px;
+  margin-left: 10px;
+  border-radius: 10px;
+  opacity:0.7;
+  font-size:18px;
+  margin-top: 0px;
+}
+#menu{
+  background-color: #ededed;
+  position: absolute;
+  top: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 960px;
+}
+#menu ul {
+    padding-left: 10px;
+    margin-top:0px;
+}
+#menu li {
+  color: #800000;
+  text-decoration:none;
+  float: left;
+  list-style-type: none;
+  border-style: dashed;
+  border-width: 1px;
+  border-bottom-width: 0px;
+  border-top-width: 0px;
+  text-align: center;
+  padding:10px;
+}
+#menu li a {
+  text-decoration: none;
+    color: #800000;
+}
+#sidebar {
+  float:right;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+#sidebar h2{
+    background-image:url('images/link_bg.png');
+    color:white;
+    padding:10px;
+}
+#sidebar li {
+  list-style-type: none;
+}
+#sidebar a {
+  color: #db1dcd;
+}
+#sidebar ul {
+  background-color:white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#content {
+  padding-top: 10px;
+  padding-left: 10px;
+  margin:10px;
+  background-color: white;
+  width: 685px;
+  height:auto;
+}
+#content h2 {
+  color: #db1dcd;
+}
+#content p {
+}
+</style>
+
+</head>
+<body>
+<div id="wrapper">
+<header id="banner">
+  <h1>CSS Mini-Project</h1>
+  <p id="tagline">2-col float layout (pink)</p>
+<nav id="menu">
+<ul>
+	  <li><a href="#">Home</a></li>
+  	<li><a href="#">About</a></li>
+  	<li><a href="#">Features</a></li>
+</ul>
+</nav>
+</header>
+<aside id="sidebar">
+<nav>
+<h2>UWM Links</h2>
+<ul>
+  <li><a href="#">UWM News Stories</a></li>
+  <li><a href="#">Today @ UWM</a></li>
+  <li><a href="#">Featured Stories</a></li>
+  <li><a href="#">Sports News
+  </a></li>
+</ul>
+</nav>
+<nav>
+<h2>For the Media</h2>
+<ul>
+  <li><a href="#">News Releases</a></li>
+  <li><a href="#">Media Contacts</a></li>
+  <li><a href="#">Experts Directory</a></li>
+  <li><a href="#">Photo Archive</a></li>
+  <li><a href="#">Maps</a></li>
+  <li><a href="#">Quick Facts</a></li>
+  <li><a href="#">Open Records Request</a>  </li>
+</ul>
+</nav>
+<h2>UWM Publications</h2>
+<ul>
+  <li><a href="#">UWM Report</a></li>
+  <li><a href="#">UWM in the News</a></li>
+  <li><a href="#">UWM Radio</a></li>
+  <li><a href="#">UWM Today</a>  </li>
+</ul>
+</nav>
+</aside>
+<article id="content">
+<h2>Main Content</h2>
+<p>Catherine Van Leer started her life in one of the Midwest&rsquo;s most notorious
+  places &ndash; Cabrini-Green on Chicago&rsquo;s north side. The public housing
+  project is seen as one of the <em>worst examples</em> of urban planning in the country.
+  It concentrated poor, mostly African American residents in substandard high-rise
+  apartments and row houses. Cabrini-Green gained a national reputation for organized
+  crime, gang violence and drug activity.</p>
+<p>When she was 4 years old, Van Leer left Cabrini-Green with her mother and
+  six brothers and sisters and moved to the Riverwest area of Milwaukee. Now,
+  the 22-year-old is studying architecture at the University of Wisconsin-Milwaukee
+  (UWM). Van Leer says growing up in urban communities helped shape her career
+  goals.</p>
+<p>&ldquo;I&rsquo;m interested in issues affecting low-income people,&rdquo; Van
+  Leer said. &ldquo;I want to bring more awareness to the concerns they face.
+  And I can add a personal view of that environment.&rdquo;</p>
+<p>Van Leer and her older sister are first-generation college students.</p>
+<p>&ldquo;Education was not a topic of discussion in our household,&rdquo; she
+  said. &ldquo;But I had a lot of teachers who saw a lot in me and encouraged
+  me to go into higher education. They showed me I had potential in something.&rdquo;</p>
+<p>Van Leer is one of the UWM&rsquo;s McNair Scholars. The goal of the federal
+  program is to boost the number of students from underrepresented backgrounds
+  who enter graduate school. The program was established in 1989 in honor of
+  Ronald E. McNair, who was the second African American to fly in space. He died
+  in the space shuttle Challenger explosion in 1986.</p>
+<p>Each year, at least two-thirds of the McNair Scholars are low-income, first-generation
+  college students. The remaining students come from backgrounds that are underrepresented
+  in graduate education. The McNair Program provides students academic advising,
+  tutoring, career counseling and travel opportunities to help make a smooth
+  transition from undergraduate to graduate education. The program is open to
+  all students in all fields of study.</p>
+<p>This year, Van Leer and two other McNair Scholars are studying architecture,
+  a degree program that typically sees low minority enrollment.<br />
+  Catherine Van Leer and her faculty mentor, <em>Sammis White</em>, professor of urban
+  planning, in one of the studios in the School of Architecture and Urban Planning </p>
+<p>&ldquo;Architecture inspires me to make my mark,&rdquo; Van Leer said. &ldquo;I
+  have a special interest in urban planning. I like the social and economic aspects
+  of cities &ndash; how architecture follows function. You have to think about
+  what function buildings have and what impact they create.&rdquo;</p>
+<p>UW-Milwaukee McNair Scholars also produce research abstracts during the summer.
+  Van Leer&rsquo;s paper is titled &ldquo;Evaluating Strategies for Confronting
+  Inner-City Poverty: Increasing the Earned Income of Poor Residents.&rdquo; The
+  paper chronicles the history of economic troubles, poverty and joblessness
+  in Milwaukee.</p>
+<p>Van Leer examines three strategies to revitalize poor city neighborhoods &ndash; the
+  dispersal of low-income families in higher-income suburban neighborhoods, the
+  redevelopment of inner-city neighborhoods using federal grants and private
+  investment, and efforts to provide transportation for low-income city workers
+  to get to jobs in the suburbs.</p>
+<p>&ldquo;My goal is to be active in our community. I&rsquo;d like to work on
+  policy changes that can have a lasting impact,&rdquo; she said.</p>
+<p>Van Leer&rsquo;s mentor for the research project was Sammis White, a professor
+  of urban planning and the director of the Center for Workforce Development
+  at UWM. He said it&rsquo;s rare to find an undergraduate who wants to study
+  the issue of poverty.</p>
+<p>&ldquo;It&rsquo;s a very difficult issue to address,&rdquo; White said. &ldquo;We&rsquo;ve
+  had many decades of federal public policy trying to do it, as well as many
+  local organizations trying to address it. And if we look at the numbers, as
+  Catherine did, things got a little better for a while, but they really haven&rsquo;t
+  changed much. In recent years, poverty has increased in Milwaukee and several
+  other major cities.&rdquo;</p>
+<p>White says he&rsquo;s glad to see architecture and urban planning becoming
+  a more diverse field of study at UWM.</p>
+<p>&ldquo;An awful lot of individuals pursue occupations they know something
+  about,&rdquo; he said. &ldquo;There are very few black architects and even
+  fewer black urban planners. It&rsquo;s been a major problem to try to get word
+  of these fields out to a broader audience.&rdquo;</p>
+<p>Van Leer says she&rsquo;s considering UW-Milwaukee, Penn State or the University
+  of Illinois at Chicago for her graduate degree. She says she&rsquo;d like to
+  end up working in Milwaukee.</p>
+<p>&ldquo;I see a lot of opportunities and a lot of potential in Milwaukee,&rdquo; she
+  said.</p>
+<p>Other 2006 McNair Scholars&rsquo; summer research projects focused on breast-feeding
+  in the workplace, obstacles to prenatal care among African American adolescents,
+  the rise of contemporary Chinese art, analysis of late-night comedy news shows
+  and Hispanic/Latino involvement in K-12 education.</p>
+</article>
+</div>
+
+
+
+</body>
+</html>
